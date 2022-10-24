@@ -66,7 +66,6 @@ def change(id, data):
             author.first_name = first_name
             author.last_name = last_name
             
-            db.session.delete(author)
             db.session.commit()
         
             return author
